@@ -136,9 +136,9 @@ export function Login(props : ILoginProps) {
         );
     }
 
-    // if (loggedInUser === undefined) {
-    //     return null;
-    // }
+    if (loggedInUser === undefined) {
+        return null;
+    }
 
     if (loggedInUser) {
         return <Navigate to = "/home" />;
