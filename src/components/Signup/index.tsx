@@ -93,7 +93,6 @@ export function Signup({ loggedInUser, setLoggedInUser, setInterestingAsyncOpSta
                         onChange = {() => setGenerateUid(!generateUid)}
                         style = {generateUidCheckboxStyle()}
                     />
-                    console.log("h");
                     <span
                         style = {checkboxTextStyle(theme)}
                     >
