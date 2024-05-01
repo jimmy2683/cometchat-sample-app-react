@@ -11,6 +11,7 @@ import IronManAvatar from "../../assets/ironman_avatar.png";
 import { LoginSignup } from "../LoginSignup";
 import SpidermanAvatar from "../../assets/spiderman_avatar.png";
 import { TextInput } from "../TextInput";
+import { parse } from "path/posix";
 
 interface ILoginProps {
     loggedInUser : CometChat.User | null | undefined,
@@ -172,7 +173,8 @@ export function Login(props : ILoginProps) {
                     <TextInput 
                         labelText = "Or else continue with login using UID"
                         placeholderText = "Enter UID here"
-                        value = {uid}
+                        
+                        value ={uid}
                         onValueChange = {setUid}
                         required
                     />

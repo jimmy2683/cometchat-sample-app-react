@@ -74,7 +74,8 @@ export function Signup({ loggedInUser, setLoggedInUser, setInterestingAsyncOpSta
                     labelText = "UID"
                     placeholderText = "Enter UID here"
                     value = {uid}
-                    onValueChange = {setUid}                    
+                    onValueChange = {setUid}  
+                                    
                 />
                 <TextInput 
                     labelText = "Name"
@@ -92,6 +93,7 @@ export function Signup({ loggedInUser, setLoggedInUser, setInterestingAsyncOpSta
                         onChange = {() => setGenerateUid(!generateUid)}
                         style = {generateUidCheckboxStyle()}
                     />
+                    console.log("h");
                     <span
                         style = {checkboxTextStyle(theme)}
                     >
